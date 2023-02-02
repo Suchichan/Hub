@@ -6,7 +6,7 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=30">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -22,26 +22,26 @@
     </nav>
 
 <section id="input">
-    
+<div class="d-flex justify-content-center">
         <h3>Please Enter the announcement details</h3>
-
-        <form>
+</div>
+        <form method="post">
 
         <div class="d-flex justify-content-center">
-  <div class="row mb-3 w-50 p-2" >
+  <div class="row mb-3 w-50 p-1" >
     <label for="ControlInput1" class="col-sm-2 col-form-label">Title</label>
-    <div class="col-sm-10">
+    <div class="col-sm-8">
         <input type="text" name="title" class="form-control" id="ControlInput1" placeholder="Title of Announcement">
         
     </div>
   </div></div>
 
   <div class="d-flex justify-content-center">
-  <div class="row mb-5 w-50 p-2">
+  <div class="row mb-5 w-50 p-1">
     <label for="ControlTextarea1" class="col-sm-2 col-form-label">Desciption</label>
-    <div class="col-sm-10">
+    <div class="col-sm-8">
     
-    <textarea type="text" name="text" class="form-control" id="ControlTextarea1" rows="3" placeholder="Description of the Announcement"></textarea>
+    <textarea type="text" name="text" class="form-control" id="ControlTextarea1" rows="5" placeholder="Description of the Announcement"></textarea>
 
     </div>
     </div></div>
@@ -50,7 +50,7 @@
     <div class="d-flex justify-content-center">
     <div class="row mb-3 w-50 p-1">
     <label for="DatelInput1" class="col-sm-2 col-form-label">Start Date</label>
-    <div class="col-sm-10">
+    <div class="col-sm-8">
         <input type="date" name="start" class="form-control" id="DateInput1">
     </div>
     </div></div>
@@ -58,17 +58,17 @@
     <div class="d-flex justify-content-center">
     <div class="row mb-3 w-50 p-1">
     <label for="DatelInput1" class="col-sm-2 col-form-label">End Date</label>
-    <div class="col-sm-10">
+    <div class="col-sm-8">
         <input type="date" name="start" class="form-control" id="DateInput2">
     </div>
     </div></div>
 
 
     <div class="d-flex justify-content-center">
-    <fieldset class="row mb-3 w-50 p-2">
-    <legend class="col-form-label col-sm-2 pt-0">Status</legend>
+    <fieldset class="row mb-3 w-50 p-1">
+    <legend class="col-form-label col-sm-5">Status</legend>
 
-    <div class="col-sm-10">
+    <div class="col-sm-1">
       <div class="form-check">
         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
         <label class="form-check-label" for="gridRadios1">
@@ -84,31 +84,22 @@
   </fieldset>
 </div>
 </section>
+</form>
 
-<section id ="submit">
-        <input class="submit "type="submit" value="Announce">
-        <input class = "submit" type="reset" value="Reset">
+<div class="d-flex mt-3 justify-content-center">
+<h5>
+<section id ="button">
+
+<form action =insert.php method="post" name ="insert" id="submit">
+        <input class="announce" name ="submit" type="submit" value="Announce">
+</form>
+        <input class = "reset" name ="reset" type="reset" value="Reset">
+
+<form action =view.php method="post" id="submit">      
+        <input class ="view" name ="view" type ="submit" value="View All">
+
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -121,3 +112,5 @@
     -->
   </body>
 </html>
+
+

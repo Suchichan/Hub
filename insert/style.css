@@ -1,5 +1,6 @@
 body h2{
     background-color: #1b49e0;
+    background-image: linear-gradient(to right,#1b49e0,#e3cb6a);
     color: white;
     margin: 0;
     padding: 10px;
@@ -7,34 +8,41 @@ body h2{
 }
 
 body #input{
-    margin:10px;
-    margin-bottom:30px;
+    margin:150px;
+    margin-top: 15px;
+    margin-bottom:3px;
     text-align: center;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: #1b49e0;
-    border-top: 30px;
+    border-radius: 50px;
+    border-top: 12px;
+    border-left: 8px;
+    border-right: 8px;
+    border-bottom: 2px;
+    padding-top: 20px;
+    border-style: solid ;
+    border-color:#fecb00;
+    
 }
 
 
 
-#submit{
-    text-align: center;
-    margin: 0;
-   
+#submit {
+    display: inline;
+    margin-top: 200px;
+    
 }
-.submit{
+
+.announce , .reset , .view{
     color: aliceblue;
     margin: 0;
     padding:10px;
     margin-right: 8px;
-    border: solid #1b49e0;
+    border: none;
     background-color: #1b49e0;
+    border-radius: 12%;
 }
-.submit:hover{
-    
-    border: solid #fecb00;
-    background-color: #fecb00;
+.announce:hover,.reset:hover,.view:hover{
+    background-image: linear-gradient(to left,#1b49e0, #fecb00);
+    border-radius: 35%;
 
 }
 

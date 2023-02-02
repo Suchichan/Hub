@@ -16,6 +16,6 @@ if (!$db){
     die();
 }
 else{
-# echo "Yes Connected";
+#echo "Yes Connected";
 }
 ?>
